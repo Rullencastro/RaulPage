@@ -1,8 +1,3 @@
-# RaulPage
-My personal Website
-
-
-
 # Astro Starter Kit: Basics
 
 ```
