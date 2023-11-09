@@ -1,0 +1,22 @@
+---
+import Card from "./Card.astro";
+interface Props {
+	colSpan: number;
+	rowSpan: number;
+    href: string;
+}
+
+const {colSpan, rowSpan, href } = Astro.props;
+
+---
+<Card colSpan={colSpan} rowSpan={rowSpan}>
+    <!--a href={href} class="w-full h-full flex justify-center items-center">
+        <slot />
+    </a-->
+    <a href={href} class="w-full h-full flex justify-center items-center border border-white/30 relative cursor-pointer overflow-hidden whitespace-nowrap  [background:var(--bg)] [border-radius:var(--radius)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)]">
+        <slot />
+    </a>
+</Card>
+
+
+
