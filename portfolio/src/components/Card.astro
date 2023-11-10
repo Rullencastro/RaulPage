@@ -7,7 +7,7 @@ interface Props {
 const {colSpan, rowSpan } = Astro.props;
 ---
 
-<div class="relative" style="--radius:20px;--bg:radial-gradient(ellipse 80% 50% at 50% 120%,rgba(62, 61, 117),rgba(18, 18, 38))"
+<div class="relative bg-black rounded-3xl transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_40px_8px_rgba(68,64,60,0.7)]"
  class:list={[{
 	"col-span-1": colSpan === 1,
 	"col-span-2": colSpan === 2,
@@ -27,6 +27,6 @@ const {colSpan, rowSpan } = Astro.props;
 ]}>
 
 	<slot>
-		<div class="h-full w=full flex justify-center items-center border border-white/30 [background:var(--bg)] [border-radius:var(--radius)] transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_40px_8px_rgba(62,61,117,0.7)]"></div> 
+		<div class="h-full w=full flex justify-center items-center rounded-3xl"></div> 
 	<slot />
 </div>
