@@ -1,87 +1,124 @@
 ---
-import Card from "./Card.astro";
-import CardIcon from "./CardIcon.astro";
-import CardMe from "./CardMe.astro";
-import CardTech from "./CardTech.astro";
+import Card from "./Cards/Card.astro";
+import CardDarkMode from "./Cards/CardDarkMode.astro";
+import CardIcon from "./Cards/CardIcon.astro";
+import CardMe from "./Cards/CardMe.astro";
+import CardTech from "./Cards/CardTech.astro";
 ---
 
 <div class="h-screen flex justify-center items-center">
 
-<section class="grid grid-cols-12 gap-6 w-full h-full p-6">
+<section class="grid grid-cols-5 sm:grid-cols-11 gap-6 w-full h-full p-6">
     <Card
 		colSpan={3}
 		rowSpan={2}
+		order={1}
+		orderMobile={2}
 	/>
 	<Card
 		colSpan={2}
 		rowSpan={2}
+		order={2}
+		orderMobile={3}
 	/>
 	<Card
 		colSpan={2}
 		rowSpan={2}
+		order={3}
+		orderMobile={4}
 	/>
 	<Card
 		colSpan={2}
 		rowSpan={2}
-	/>
-	<Card
-		colSpan={2}
-		rowSpan={2}
+		order={6}
+		orderMobile={5}
 	/>
 	<Card
 		colSpan={1}
 		rowSpan={2}
+		order={5}
+		orderMobile={6}
+	/>
+	<CardDarkMode
+		colSpan={1}
+		rowSpan={2}
+		order={6}
+		orderMobile={7}
 	/>
 	<Card
 		colSpan={2}
 		rowSpan={4}
+		order={7}
+		orderMobile={8}
 	/>
 	<CardTech
 		colSpan={1}
 		rowSpan={4}
+		order={8}
+		orderMobile={9}
 	/>
 	<CardMe
-		colSpan={6}
+		colSpan={5}
 		rowSpan={4}
+		order={9}
+		orderMobile={1}
 	/>
 	<Card
 		colSpan={1}
 		rowSpan={3}
+		order={10}
+		orderMobile={10}
 	/>
 	<Card
 		colSpan={2}
 		rowSpan={3}
+		order={11}
+		orderMobile={11}
 	/>
 	<Card
 		colSpan={3}
 		rowSpan={1}
+		order={12}
+		orderMobile={12}
 	/>
 	<Card
 		colSpan={1}
 		rowSpan={1}
+		order={13}
+		orderMobile={13}
 	/>
 	<Card
 		colSpan={2}
 		rowSpan={1}
+		order={14}
+		orderMobile={14}
 	/>
 	<Card
-		colSpan={4}
+		colSpan={3}
 		rowSpan={1}
+		order={15}
+		orderMobile={15}
 	/>
 	<Card
 		colSpan={2}
 		rowSpan={1}
+		order={16}
+		orderMobile={16}
 	/>
 	<Card
 		colSpan={1}
 		rowSpan={1}
+		order={17}
+		orderMobile={17}
 	/>
 	<CardIcon
 		href="https://www.linkedin.com/in/raul-castro-moreno/"
 		colSpan={1}
 		rowSpan={1}
+		order={18}
+		orderMobile={18}
 	> 
-	<svg width="100" height="100" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+	<svg class="stroke-black dark:stroke-white" width="100" height="100" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
 		<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 		<path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
 		<path d="M8 11l0 5"></path>
@@ -94,8 +131,10 @@ import CardTech from "./CardTech.astro";
 		href="https://github.com/Rullencastro"
 		colSpan={1}
 		rowSpan={1}
+		order={19}
+		orderMobile={19}
 	> 
-	<svg width="100" height="100" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+	<svg class="stroke-black dark:stroke-white" width="100" height="100" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
 		<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
 		<path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
 	</svg>
