@@ -4,6 +4,20 @@ export default {
 	darkMode: 'class',
 	theme: {
 		extend: {},
+		screens: {
+			'sm': '640px',
+	  
+			'md': '768px',
+	  
+			'lg': '1024px',
+	  
+			'xl': '2000px',
+	  
+			'2xl': '3000px'
+		},
+		backgroundImage: {
+			'testing': "url('/titaniumSand.jpg')",
+		  }
 	},
 	plugins: [],
 }
